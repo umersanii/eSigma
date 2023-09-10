@@ -1,0 +1,13 @@
+pyinstaller --noconfirm --onedir --console --icon "Y:/Icons/icons8-discord-50.ico" --name "eSigma" `
+--add-data "Y:/Coding/DiscBot/eSigma/data;data/" `
+--add-data "Y:/Coding/DiscBot/eSigma/bottoken.py;." `
+--exclude-module tkinter `
+--exclude-module matplotlib `
+--add-data "Y:/Coding/DiscBot/eSigma/requirements.txt;." `
+"Y:/Coding/DiscBot/eSigma/main.py"
+
+
+$env:VIRTUAL_ENV = "Y:\Coding\DiscBot\eSigma\myenv"
+$env:PATH = "$env:VIRTUAL_ENV\Scripts;$env:PATH"
+
+ pycparser, cffi, pynacl
