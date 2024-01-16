@@ -1,3 +1,6 @@
 
 build
 *.mp3
+*.pyc
+bottoken.py
+bottoken.py
